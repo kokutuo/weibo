@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const APP_KEY = 'd8e757b6b3be4bb0da1e2bbe67f65080920d50fbd954fd8a34ea97d81596a2a9';
-const BASE_API = 'http://mock.biaoyansu.com/api/1/';
+const BASE_API = 'https://mock.biaoyansu.com/api/1/';
 
 function sign(app_key, timestamp) {
   return btoa(app_key + timestamp);

@@ -255,6 +255,14 @@ export default {
         console.log("this.code", this.code);
       });
     }
+  },
+
+  beforeClose() {
+    window.onbeforeunload(()=> {
+      setTimeout(() => {
+        confirm('确认要离开吗？')
+      }, 10);
+    });
   }
 };
 </script>
